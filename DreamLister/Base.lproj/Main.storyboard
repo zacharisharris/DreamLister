@@ -35,16 +35,17 @@
                                 </segments>
                                 <color key="tintColor" red="0.53319300518134716" green="0.53319300518134716" blue="0.53319300518134716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Le6-hD-S5E">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Le6-hD-S5E">
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.83043231870000001" green="0.25581760619999999" blue="0.74048316459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.075622353020000005" green="0.46933694949999999" blue="0.1023449982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Etl-k4-yKM" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="Etl-k4-yKM" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Etl-k4-yKM" id="MVN-0o-FbY">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-Cp-TcM">
@@ -119,7 +120,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Le6-hD-S5E" firstAttribute="top" secondItem="Bwg-aZ-Xfq" secondAttribute="bottom" constant="20" id="H6G-y6-vkZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Le6-hD-S5E" secondAttribute="bottom" id="Z70-gI-rgq"/>
@@ -138,6 +139,7 @@
                     <connections>
                         <outlet property="segment" destination="Bwg-aZ-Xfq" id="Icx-NQ-Eu2"/>
                         <outlet property="tableView" destination="Le6-hD-S5E" id="okZ-qR-cdZ"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Ufx-7C-5q2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
